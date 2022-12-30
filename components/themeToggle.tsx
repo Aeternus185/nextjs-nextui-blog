@@ -40,11 +40,7 @@ export const ThemeToggle: React.FC<Props> = ({ className, css }) => {
 			className={cn("theme-selector-container", className)}
 			css={css}
 			onClick={handleToggleTheme}>
-			{isDark ? (
-				<FiSun filled className="theme-selector-icon" size={20} />
-			) : (
-				<FiMoon filled className="theme-selector-icon" size={20} />
-			)}
+			{isDark ? <FiSun /> : <FiMoon />}
 		</StyledButton>
 	);
 };
