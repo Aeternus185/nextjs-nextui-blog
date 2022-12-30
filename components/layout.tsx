@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoReturnUpBackOutline } from "react-icons/io5";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { FiSun } from "react-icons/fi";
 import { ThemeToggle } from "./themeToggle";
 
 export const siteTitle = "Next.js Sample Website";

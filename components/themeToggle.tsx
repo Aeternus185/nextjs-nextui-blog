@@ -14,15 +14,11 @@ const StyledButton = styled("button", {
 	dflex: "center",
 	size: "auto",
 	cursor: "pointer",
-	background: "transparent",
+	bgColor: "$accents4",
+	borderRadius: "$xs",
 	border: "none",
-	padding: 0,
-	"& .theme-selector-icon": {
-		color: "$colors$accents6",
-	},
-	"@xsMax": {
-		px: "$2",
-	},
+	padding: "$xs",
+	"&:hover": { color: "$yellow800" },
 });
 
 export const ThemeToggle: React.FC<Props> = ({ className, css }) => {
@@ -36,7 +32,6 @@ export const ThemeToggle: React.FC<Props> = ({ className, css }) => {
 	return (
 		<StyledButton
 			aria-label="toggle a light and dark color scheme"
-			className={cn("theme-selector-container", className)}
 			css={css}
 			onClick={handleToggleTheme}>
 			{isDark ? <FiSun /> : <FiMoon />}
