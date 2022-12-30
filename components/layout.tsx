@@ -7,6 +7,7 @@ import { SiGmail } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoReturnUpBackOutline } from "react-icons/io5";
 import { FiSun, FiMoon } from "react-icons/fi";
+import { ThemeToggle } from "./themeToggle";
 
 export const siteTitle = "Next.js Sample Website";
 
@@ -54,12 +55,7 @@ export default function Layout({
 					</Navbar.Content>
 					<Navbar.Content>
 						<Navbar.Item>
-							<Switch
-								checked={isDark}
-								iconOn={<FiSun />}
-								iconOff={<FiMoon />}
-								onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
-							/>
+							<ThemeToggle />
 						</Navbar.Item>
 					</Navbar.Content>
 				</Navbar>
@@ -72,12 +68,7 @@ export default function Layout({
 					</Navbar.Content>
 					<Navbar.Content>
 						<Navbar.Item>
-							<Switch
-								checked={isDark}
-								iconOn={<FiSun />}
-								iconOff={<FiMoon />}
-								onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
-							/>
+							<ThemeToggle />
 						</Navbar.Item>
 					</Navbar.Content>
 				</Navbar>
