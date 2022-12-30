@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 import { CSS, styled, useTheme } from "@nextui-org/react";
 import { useTheme as useNextTheme } from "next-themes";
-import useIsMounted from "../hooks/use-is-mounted";
 
 import { FiSun, FiMoon } from "react-icons/fi";
 
