@@ -3,12 +3,12 @@ import { Grid, styled } from "@nextui-org/react";
 export const Style = styled("div", {
 	background: "$accents1",
 	boxShadow: "$sm",
-	borderRadius: "$lg",
 	display: "flex",
 	flexDirection: "column",
 	marginBottom: "1rem",
-	borderStyle: "solid",
-	borderColor: "$gradient",
+	borderRadius: "$lg",
+	/* 	borderStyle: "solid",
+	borderColor: "$gradient", */
 	bg: "$backgroundContrast",
 	"@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))": {
 		bf: "saturate(180%) blur(14px)",
