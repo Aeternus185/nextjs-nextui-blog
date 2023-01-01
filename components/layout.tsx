@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Container, Navbar, Switch, useTheme } from "@nextui-org/react";
+import { Container, Navbar, useTheme } from "@nextui-org/react";
 import { useTheme as useNextTheme } from "next-themes";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoReturnUpBackOutline } from "react-icons/io5";
-import { FiSun } from "react-icons/fi";
 import { ThemeToggle } from "./themeToggle";
 
 export const siteTitle = "Next.js Sample Website";
@@ -38,7 +37,12 @@ export default function Layout({
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			{home ? (
-				<Navbar isCompact isBordered variant="floating" maxWidth="fluid">
+				<Navbar
+					isCompact
+					isBordered
+					variant="floating"
+					maxWidth="fluid"
+					css={{ background: "transparent" }}>
 					<Navbar.Content>
 						<Navbar.Link href="https://github.com/Aeternus185">
 							<AiFillGithub size={28} />
@@ -60,7 +64,12 @@ export default function Layout({
 					</Navbar.Content>
 				</Navbar>
 			) : (
-				<Navbar isCompact isBordered variant="floating" maxWidth="fluid">
+				<Navbar
+					isCompact
+					isBordered
+					variant="floating"
+					maxWidth="fluid"
+					css={{ background: "transparent" }}>
 					<Navbar.Content>
 						<Link href="/">
 							<IoReturnUpBackOutline /> Back to home
