@@ -36,7 +36,7 @@ export default function Home({
 							<a href="https://nextui.org/">NextUI</a>.
 						</Text>
 					</Grid>
-					<Grid css={{ justifyContent: "flex-end" }}>
+					<Grid css={{ justifyContent: "flex-end" /* , flexGrow: "1" */ }}>
 						<Image
 							showSkeleton
 							src="/images/profile2.png"
