@@ -39,7 +39,7 @@ export default function Home({
 					<Grid css={{ justifyContent: "flex-end" /* , flexGrow: "1" */ }}>
 						<Image
 							showSkeleton
-							src="/images/profile2.png"
+							src="/images/profile.png"
 							height={144}
 							width={144}
 							alt="Aeternus"
