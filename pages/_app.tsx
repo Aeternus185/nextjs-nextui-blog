@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { AppProps } from "next/app";
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { useEffect } from "react";
 
 const lightTheme = createTheme({
 	type: "light",
@@ -14,7 +15,11 @@ const darkTheme = createTheme({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-	document.body.style.background = "transparent";
+	useEffect(() => {
+		document.body.style.background = "transparent";
+
+		return () => {};
+	}, []);
 	return (
 		<NextThemesProvider
 			defaultTheme="system"
